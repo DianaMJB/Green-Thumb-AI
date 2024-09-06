@@ -11,24 +11,25 @@
       href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <div>
       <h1>GREEN THUMB</h1>
-      <p>AI pocket gardener tool 🌱</p>
+      <p>AI botanical expert tool 🌱</p>
       <div id="container">
         <div class="frosted"></div>
         <form id="ai-search">
           <input
-            type="text"
-            name=""
+            type="search"
             id="bar"
-            placeholder="e.x How to plant a monstera"
+            placeholder="e.g. monstera, peony, cacti "
             autofocus
             required
           />
-          <input type="submit" id="button" />
+          <input type="submit" id="submit-button" />
         </form>
         <div id="ai-answer"></div>
       </div>
@@ -36,7 +37,7 @@
         <strong class="footer-name">Green Thumb AI</strong>
         developed by
         <a href="https://github.com/DianaMJB" target="_blank">Diana Jimenez</a>
-        <br />
+
         Explore the open-source code on
         <a href="https://github.com/DianaMJB/Green-Thumb-AI" target="_blank">
           GitHub
