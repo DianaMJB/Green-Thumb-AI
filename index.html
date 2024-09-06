@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <div>
@@ -18,7 +19,7 @@
       <p>AI pocket gardener tool 🌱</p>
       <div id="container">
         <div class="frosted"></div>
-        <form>
+        <form id="ai-search">
           <input
             type="text"
             name=""
@@ -29,16 +30,7 @@
           />
           <input type="submit" id="button" />
         </form>
-        <div id="ai-answer">
-          Choose a pot with drainage holes. Use well-draining soil, like a
-          peat-based mix with perlite. Plant the monstera in the center of the
-          pot, covering the roots or node (if it's a cutting). Provide support
-          with a moss pole or stake if desired. Water thoroughly, letting the
-          top inch of soil dry between waterings. Place in bright, indirect
-          light and keep in a humid, warm area (18-30°C). Fertilize monthly
-          during spring and summer. Prune damaged leaves and repot as needed.
-          This will help your monstera grow healthy!
-        </div>
+        <div id="ai-answer"></div>
       </div>
       <footer>
         <strong class="footer-name">Green Thumb AI</strong>
@@ -56,4 +48,5 @@
       </footer>
     </div>
   </body>
+  <script src="src/index.js"></script>
 </html>
