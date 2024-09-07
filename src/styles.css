@@ -104,7 +104,7 @@ form {
   background: radial-gradient(circle, green, chartreuse, orange, hotpink);
   background-clip: text;
   color: transparent;
-  animation: blink 2.5s linear infinite;
+  animation: blink 3.1s linear infinite;
   background-size: 200% 200%;
   font-size: 20px;
   font-weight: 700;
