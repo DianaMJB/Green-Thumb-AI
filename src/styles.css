@@ -85,6 +85,16 @@ form {
   background-color: #37a452da;
   border: 2px solid rgb(108, 182, 33);
 }
+#intro {
+  display: block;
+  font-size: 14.5px;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px black;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
 #ai-answer {
   font-size: 15px;
   padding: 25px 35px;
@@ -99,6 +109,9 @@ form {
 }
 .hidden {
   display: none;
+}
+.hide {
+  display: none !important;
 }
 .blink {
   background: radial-gradient(circle, green, chartreuse, orange, hotpink);
@@ -135,6 +148,7 @@ form {
 footer {
   font-weight: 100;
   font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.496);
 }
 a {
   color: rgb(108, 182, 33);

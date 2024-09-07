@@ -9,6 +9,10 @@ function generateAnswer(response) {
 
 function callApi(event) {
   event.preventDefault();
+
+  let introElement = document.querySelector("#intro");
+  introElement.classList.add("hide");
+
   let userInput = document.querySelector("#bar");
   let prompt = `generate advice about: ${userInput.value}`;
   let apiKey = "0o3e0962641a02f3333tabb947225bb2";
