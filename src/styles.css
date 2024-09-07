@@ -97,12 +97,36 @@ form {
   position: relative;
   z-index: 2;
 }
+.hidden {
+  display: none;
+}
+.blink {
+  background: radial-gradient(circle, green, chartreuse, orange, hotpink);
+  background-clip: text;
+  color: transparent;
+  animation: blink 2.5s linear infinite;
+  background-size: 200% 200%;
+  font-size: 20px;
+  font-weight: 700;
+}
+@keyframes blink {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
 #ai-answer h2 {
   padding: 0;
 }
 #ai-answer p {
   text-align: justify;
   font-size: 15px;
+  padding-bottom: 10px;
 }
 #ai-answer li {
   list-style: none;
@@ -110,7 +134,7 @@ form {
 }
 footer {
   font-weight: 100;
-  font-size: 13px;
+  font-size: 14.5px;
 }
 a {
   color: rgb(108, 182, 33);
